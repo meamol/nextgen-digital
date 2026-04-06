@@ -1,0 +1,142 @@
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  /* ⭐ CHANGE 7: smooth background transition */
+
+  transition: background-image 1s ease-in-out;
+}
+
+.overlay {
+  /* ⭐ CHANGE 8: improved professional overlay gradient */
+
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: white;
+  padding: 20px;
+
+  /* ⭐ CHANGE 9: fade animation */
+
+  animation: fadeText 1s ease;
+}
+
+.overlay h1 {
+  font-size: 48px;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  font-size: 18px;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* ⭐ CHANGE 10: button converted anchor-style CTA */
+
+.primary-btn {
+  background: #4f46e5;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: #3730a3;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: white;
+  color: black;
+}
+
+.arrows {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.dots {
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.dot.active {
+  opacity: 1;
+  background: #f59e0b;
+}
+
+/* ⭐ CHANGE 11: smooth text fade animation */
+
+@keyframes fadeText {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 32px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+}

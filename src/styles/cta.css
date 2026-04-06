@@ -1,0 +1,39 @@
+.cta {
+  padding: 100px 10%;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  text-align: center;
+}
+
+/* Container */
+
+.cta-container h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.cta-container p {
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+/* Button */
+
+.cta-btn {
+  background: white;
+  color: #4f46e5;
+  border: none;
+  padding: 15px 32px;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Hover */
+
+.cta-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}

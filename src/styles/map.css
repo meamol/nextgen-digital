@@ -1,0 +1,19 @@
+.map-section {
+  /* padding: 80px 10%; */
+  padding: 80px 0%;
+  background: white;
+  text-align: center;
+}
+.map-title {
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+.map-container {
+  width: 100%;
+  /* max-width: 1000px; */
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
